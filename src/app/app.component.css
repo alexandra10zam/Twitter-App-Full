@@ -1,0 +1,14 @@
+/* src/styles.css */
+body {
+    background-color: #218cd4;
+}
+/* src/app/components/feed/feed.component.css */
+.feed-content {
+    font-size: 18px;
+    color: #333;
+}
+.feed-content {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
