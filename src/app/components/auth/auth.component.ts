@@ -16,6 +16,6 @@ export class AuthComponent {
   }
 
   onSignUp() {
-    this.router.navigate(['/register']); // Navigate to the sign-up (register) page
+    this.router.navigate(['/signup']); // Navigate to the sign-up (register) page
   }
 }
