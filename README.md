@@ -1,27 +1,28 @@
-# TwitterApp
+# Twitter App: Angular Frontend (work in progress)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+![Angular](https://img.shields.io/badge/Angular-18-DD0031?logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 
-## Development server
+The Angular frontend for a Twitter-style social app. Its backend is the Spring Boot [users-microservice](https://github.com/alexandra10zam/users-microservices-).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Current state
 
-## Code scaffolding
+- Standalone-component Angular 18 app with routing: welcome/auth page, login, sign-up, with a default redirect and a fallback route
+- Components scaffolded for the feed, posts, replies, likes, search and user profile
+- `AuthService`, `UserService` and `PostService` prepared for the REST integration
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Next steps
 
-## Build
+- [ ] Connect the services to the users-microservice REST API (`HttpClient`)
+- [ ] Login and sign-up forms with reactive-form validation
+- [ ] Feed, post and like flows
+- [ ] JWT-based auth once the backend supports it
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Run it
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm install
+npx ng serve      # http://localhost:4200
+npx ng test       # unit tests (Karma + Jasmine)
+```
